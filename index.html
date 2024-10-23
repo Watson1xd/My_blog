@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-g"></i>
+                    <div class="logo-text">WATSON TECH</div>
+                </div>
+               <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+               <ul class='navlinks'>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolios">Portfolio</a></li>
+                 <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li>
+                    <a href="/example_resume.pdf" target="_blank">
+                      <button class="btn">Resume</button>
+                    </a>
+                  </li>
+               </ul>
+                </nav>    
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="https://github.com/mouricedevs.png?length=70width=50" alt="Gifted Tech">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Web Developer</span></h5>
+                    <h1>Watson Fourpence</h1>
+                    <p> Hello! I'm Watson-xd, an aspiring bot developer with a passion for coding. Although I'm new to the field, I'm dedicated to learning and improving my skills. This portfolio showcases my journey, progress, and projects as I strive to become a proficient bot developer!</p>
+
+                    <div class="btn-group">
+                       <a href="https://youtube.com/@WATSON_TECH" class="btn active">Subscribe</a>
+                       <a href="https://whatsapp.com/channel/0029VajjzuB9sBI890YffB1b" class="btn">Follow</a></br>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://youtube.com/@WATSON_TECH"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/watsonxdboy"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/+263789622747"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://tiktok.com/@giftedtechke"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VajjzuB9sBI890YffB1b"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function(){
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input",{
+            strings: ["FullStack Developer", "Student", "Hobby Programmer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+     </script>
+</body>
+</html>
